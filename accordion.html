@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    .accordion{
+      list-style: none;
+      padding-left: 25px;
+      list-style: none;
+    }
+    .accordion-body{
+      display: none;
+    }
+    .accordion-body.in{
+      display: block;
+    }
+    .accordion-head{
+      display: block;
+      padding: 2px 6px;
+    }
+    .accordion-head.active{
+      background-color: #ececec;
+    }
+    .accordion-item{
+      position: relative;
+    }
+    .accordion-item::before{
+      content: '';
+      position: absolute;
+      width: 0; 
+      height: 0; 
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid #222;
+
+      right: 100%;
+      top: 7px;
+      margin-right: 8.5px;
+    }
+    .accordion-item.active::before{
+      transform: rotate(90deg);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <ul class="accordion">
+      <li class="accordion-item">
+        <a href="" class="accordion-head">Accordion Head 1</a>
+        <div class="accordion-body in">
+          <ul class="accordion">
+            <li class="accordion-item">
+              <a href="" class="accordion-head">Accordion Head 1.1</a>
+              <div class="accordion-body">
+                <ul class="accordion">
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 1.1.1</a>
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 1.1.2</a>
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="accordion-item">
+              <a href="" class="accordion-head">Accordion Head 1.2</a>
+              <div class="accordion-body">
+                <ul class="accordion">
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 1.2.1</a>
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 1.2.2</a>
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <a href="" class="accordion-head">Accordion Head 2</a>
+        <div class="accordion-body">
+          <ul class="accordion">
+            <li class="accordion-item">
+              <a href="" class="accordion-head">Accordion Head 2.1</a>
+              <div class="accordion-body">
+                <ul class="accordion">
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 2.1.1</a>
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 2.1.2</a>
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="accordion-item">
+              <a href="" class="accordion-head">Accordion Head 2.2</a>
+              <div class="accordion-body">
+                <ul class="accordion">
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 2.2.1</a>
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 2.2.2</a>
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <a href="" class="accordion-head">Accordion Head 3</a>
+        <div class="accordion-body">
+          <ul class="accordion">
+            <li class="accordion-item">
+              <a href="" class="accordion-head">Accordion Head 3.1</a>
+              <div class="accordion-body">
+                <ul class="accordion">
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 3.1.1</a>
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 3.1.2</a>
+                    <div class="accordion-body" >
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="accordion-item">
+              <a href="" class="accordion-head">Accordion Head 3.2</a>
+              <div class="accordion-body">
+                <ul class="accordion">
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 3.2.1</a>
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a href="" class="accordion-head">Accordion Head 3.2.2</a>
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente.
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <a href="" class = "accordion-head" id="stest">Accordion Head 3.2.3</a>
+                    <div class= "accordion-body"id="stest1">
+                      Sheersho has reached till here
+                    </div>
+                  </li> 
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+      $('.accordion').find('.in').each(function(){
+        $(this).siblings('.accordion-head').addClass('active').parent().addClass('active');
+      });
+
+      $('.accordion-head').click(function(event){
+        event.preventDefault();
+        if($(this).hasClass('active')){
+          $(this).removeClass('active').siblings('.in').slideUp().removeClass('in').parent().removeClass('active');
+        }
+        else{
+          $(this).addClass('active').next().slideDown().addClass('in').parent().addClass('active').siblings('.active').each(function(){
+            $(this).removeClass('active').find('.in').slideUp();
+            $(this).find('.active').removeClass('active');
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

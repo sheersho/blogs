@@ -1,0 +1,324 @@
+<html>
+<head>
+	<title>Sheersho</title>
+
+	<style>
+
+		li, a{
+			list-style-type:none;
+			text-decoration: none;
+			margin:0 20px;
+			font-size:24px;
+		}
+
+		nav{
+			width:100vw;
+			background-color: #FFFF00;
+		}
+
+		a:hover{
+			background-color: #C6E9FF;
+		}
+
+		li.red{
+			 margin-left:530px;
+			 color:white;
+		}
+
+		li.red:hover{
+			background-color:red;
+		}
+
+		.navbarButton{
+			display: block;
+			cursor: pointer;
+			align-self: flex-start;
+			padding-top:50px;
+		}
+
+
+	</style>
+	<style>
+    .accordion{
+      list-style: none;
+      padding-left: 25px;
+      list-style: none;
+    }
+    .accordion-body{
+      display: none;
+    }
+    .accordion-body.in{
+      display: block;
+    }
+    .accordion-head{
+      display: block;
+      padding: 2px 6px;
+    }
+    .accordion-head.active{
+      background-color: #ececec;
+    }
+    .accordion-item{
+      position: relative;
+    }
+    .accordion-item::before{
+      content: '';
+      position: absolute;
+      width: 0; 
+      height: 0; 
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid #222;
+
+      right: 100%;
+      top: 7px;
+      margin-right: 8.5px;
+    }
+    .accordion-item.active::before{
+      transform: rotate(90deg);
+    }
+
+  </style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+		<button id="navbarButton" class="btn btn-success">☰</button>
+		<ul style="display:flex">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#home">About</a></li>
+			<li><a href="#home">Contact</a></li>
+			<li><a href="#home">Extras</a></li>	
+			<li class="red"><a href="#home">Logout</a></li>
+		</ul>
+	</nav>
+
+	<div class ="container" style="display:flex;flex-direction:column;">
+		<div style="display:flex; flex-direction: row; justify-content: space-between;">
+			<h1>Welcome Sheersho</h1>
+			<img style="height:100px; width: 100px;" src="./sheersho.png"></img>
+		</div>
+		<div style="display:flex;justify-content:right;margin-top: -20px;">
+		<button style="width:100px;background-color:#FFFF00; color:black; border:none;" type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Sign Up</button>
+
+
+
+			
+		</div>
+
+		<br>
+
+		 <div class="container" id="acc">Accordion</div>
+
+		<h3>Head One</h3>
+		<p>
+			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+	    </p>
+	    <h3>Head Two</h3>
+	   	<p>
+	    	It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+		</p>
+
+
+  
+		<div class="container">
+			<h2>Cards with Contextual Classes</h2>
+			<div class="card">
+				<div class="card-body">Thank</div>
+			</div>
+			<br>
+			<div class="card bg-success ">
+				<div class="card-body">Success card</div>
+			</div>
+			<br>
+			<div class="card bg-info ">
+				<div class="card-body">Info card</div>
+			</div>
+			<br>
+			<div class="card bg-warning ">
+				<div class="card-body">Warning card</div>
+			</div>
+			<br>
+			<div class="card bg-danger text-white">
+				<div class="card-body">Danger card</div>
+			</div>
+			<br>
+			<div class="card bg-secondary text-white">
+				<div class="card-body">Secondary card</div>
+			</div>
+			<br>
+			<div class="card bg-dark text-white">
+				<div class="card-body">Dark card</div>
+			</div>
+			<br>
+			<div class="card bg-light text-dark">
+				<div class="card-body">Light card</div>
+			</div>
+		</div>
+
+		
+		  <br><br><br><br>
+
+	</div>
+
+	
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+
+  </div>
+</div>	
+</div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+var x = {
+  "A": {  	
+  	"id": "1",
+    "title": "Accordion Head 1",
+    "body": {
+          	"id": "1.1",
+          	"title": "Accordion Head 1.1",
+          	"body": {
+          		"id":"1.1.1",
+          		"title": "Accordion Head 1.1.1",
+          		"body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente."
+          	}
+          },
+    },
+    "B": {  	
+  	"id": "2",
+    "title": "Accordion Head 1",
+    "body": {
+          	"id": "2.1",
+          	"title": "Accordion Head 2.1",
+          	"body": {
+          		"id":"2.1.1",
+          		"title": "Accordion Head 2.1.1",
+          		"body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi, vero iusto, architecto facere inventore praesentium similique. Officia laudantium ex dolor animi eius reprehenderit laboriosam, assumenda cumque quo, provident sapiente."
+          	}
+          },
+    },
+    
+    
+}
+
+let data = [
+{
+	head: 'Accordion head 1',
+	body: 'Lorem Ipsum'
+},
+{
+	head: 'Accordion head 2',
+	body: 'Lorem Ipsum'
+},
+{
+	head: 'Accordion head 3',
+	body: [{
+		head : 'Accordion inner head 3.1',
+		body: [{
+			head : 'Accordion inner head 3.1.1',
+			body: [{
+				head : 'Accordion inner head 3.1.1.1',
+				body: 'lorem ipsum'
+			},{
+				head : 'Accordion inner head 3.1.1.2',
+				body: 'lorem ipsum'
+			}]
+		}]
+	}]
+}
+]
+
+
+  	function MakeAccordion(obj){
+
+  		var json = '<ul class="accordion">';
+
+  		obj.forEach(function(item){
+  			json += '<li class="accordion-item">';
+  			json += '<a href="" class="accordion-head">' + item.head+'</a>';
+
+  			debugger;
+            if(Array.isArray(item.body))
+            {
+	  			json += '<ul class="accordion">' + MakeAccordion(item.body); 
+  		    }
+  		    else {
+  		   		json += '<div class="accordion-body">'+ item.body +'</div>';
+  		    }
+
+  		});
+
+		return json ;
+  }
+
+
+  var h = document.getElementById("acc");
+  h.insertAdjacentHTML("beforeend", MakeAccordion(data));
+
+
+ 
+ 
+  $("#navbarButton").click(function(){
+      
+      /* this if else to change the text in the button */
+      if($("#navbarButton").text() == "☰"){
+       $("#navbarButton").text("Navbar");
+	   $("#navbarButton").removeClass("btn-success").addClass("btn-primary")
+      }
+      else{
+        $("#navbarButton").text("☰");
+		$("#navbarButton").removeClass("btn-primary").addClass("btn-success")
+      }
+    
+    /* this function toggle the visibility of our "li" elements */
+    $("li").toggle("slow");
+  });
+});
+
+    $(document).ready(function(){
+
+      $('.accordion').find('.in').each(function(){
+        $(this).siblings('.accordion-head').addClass('active').parent().addClass('active');
+      });
+
+      $('.accordion-head').click(function(event){
+        event.preventDefault();
+        if($(this).hasClass('active')){
+          $(this).removeClass('active').siblings('.in').slideUp().removeClass('in').parent().removeClass('active');
+        }
+        else{
+          $(this).addClass('active').next().slideDown().addClass('in').parent().addClass('active').siblings('.active').each(function(){
+            $(this).removeClass('active').find('.in').slideUp();
+            $(this).find('.active').removeClass('active');
+          });
+        }
+      });
+    });
+  </script>
+
+</html>

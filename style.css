@@ -1,0 +1,93 @@
+
+
+.checkCSS{
+
+  margin:0 auto;
+
+
+  color:white;
+  background:blue; 
+}
+
+img{
+
+
+  height:100px;
+  width: 100px;
+  display:block;
+}
+
+
+
+		li, a{
+			list-style-type:none;
+			text-decoration: none;
+			margin:0 20px;
+			font-size:24px;
+		}
+
+		nav{
+			width:100vw;
+			background-color: #FFFF00;
+		}
+
+		a:hover{
+			background-color: #C6E9FF;
+		}
+
+		li.red{
+			 margin-left:530px;
+			 color:white;
+		}
+
+		li.red:hover{
+			background-color:red;
+		}
+
+		.navbarButton{
+			display: block;
+			cursor: pointer;
+			align-self: flex-start;
+			padding-top:50px;
+		}
+
+
+
+    .accordion{
+      list-style: none;
+      padding-left: 25px;
+      list-style: none;
+    }
+    .accordion-body{
+      display: none;
+    }
+    .accordion-body.in{
+      display: block;
+    }
+    .accordion-head{
+      display: block;
+      padding: 2px 6px;
+    }
+    .accordion-head.active{
+      background-color: #ececec;
+    }
+    .accordion-item{
+      position: relative;
+    }
+    .accordion-item::before{
+      content: '';
+      position: absolute;
+      width: 0; 
+      height: 0; 
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid #222;
+
+      right: 100%;
+      top: 7px;
+      margin-right: 8.5px;
+    }
+    .accordion-item.active::before{
+      transform: rotate(90deg);
+    }
+
